@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audiobook Factory: Privacy Policy</title>
+<meta name="description" content="How Audiobook Factory handles Google account data: it is kept on the owner's computer; summary numbers and video titles of the channel are processed by an AI assistant to prepare advice.">
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --fg: #1d2330; --muted: #566074; --line: #d9deea; --accent: #2b5fd9; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14171f; --fg: #e8ebf3; --muted: #a2abbd; --line: #2b3242; --accent: #8fb0ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 2.2rem 0 .5rem; }
+  p.lead { color: var(--muted); margin-top: 0; }
+  ul, ol { padding-left: 1.2rem; }
+  li { margin: .5rem 0; }
+  code { background: rgba(127, 127, 127, .15); padding: .05rem .3rem; border-radius: 4px; font-size: .92em; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="lead">Audiobook Factory. Last updated: October 2026.</p>
+
+  <h2>Who this applies to</h2>
+  <p>Audiobook Factory is a desktop program that runs on its owner's own computer and is used by that one person for the owner's own YouTube channel. This policy explains what the program does with the Google account data it can reach after the owner signs in.</p>
+
+  <h2>What data the program accesses</h2>
+  <p>With the owner's permission, through Google sign-in, the program can:</p>
+  <ul>
+    <li>upload videos to the owner's YouTube channel (<code>youtube.upload</code>);</li>
+    <li>read and change the settings of the owner's channel and videos, such as titles, descriptions, thumbnails, subtitles and playlists (<code>youtube.force-ssl</code>);</li>
+    <li>read the statistics of the owner's channel, such as views, watch time and retention (<code>yt-analytics.readonly</code>).</li>
+  </ul>
+  <p>The program also keeps the sign-in token that Google gives it, so that the owner does not have to sign in again for every action.</p>
+
+  <h2>How the data is used</h2>
+  <p>The data is used only to do what the owner asks inside the program: publish the owner's videos, keep their descriptions up to date and show the owner how the channel is doing, and to prepare recommendations for the owner (see "Sharing" below). It is not used for advertising, profiling, selling or any other purpose.</p>
+
+  <h2>Where the data is stored</h2>
+  <ul>
+    <li>The data is kept on the owner's computer. The program has no server of its own and does not upload your data anywhere, except for the one exception described under "Sharing".</li>
+    <li>The sign-in token is stored on the computer in encrypted form, protected by Windows (DPAPI), so it can be read only by the owner's Windows user account.</li>
+    <li>Channel statistics are saved in a local database on the same computer.</li>
+    <li>Backup copies of the program's data, including that database, are made on the owner's own disks.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>The data is not sold, and it is not given to advertisers or to the author of the program. There is one exception, and it is stated here plainly: to prepare recommendations for the owner, the program gives the summary numbers of the channel and the titles of the owner's own videos (views, watch time, audience retention, traffic sources and click-through rate from the exported reports) to the Claude AI assistant made by Anthropic. It runs through the owner's own subscription on the owner's computer. Nobody else receives this information. Passwords, sign-in tokens and the contents of the owner's account are never given to the assistant. Apart from this, the program talks to Google to carry out the owner's actions on the owner's channel. The use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+
+  <h2>How to remove the access</h2>
+  <p>The owner can stop the program's access at any time, in either of these ways:</p>
+  <ol>
+    <li>In the program, open the channel page and choose to disconnect the channel. The sign-in token is deleted from the computer.</li>
+    <li>In the Google account, open <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, choose Audiobook Factory and select "Delete all connections" (or "Remove access"). Google then stops accepting the token.</li>
+  </ol>
+  <p>To remove the data that is already on the computer, delete the program's data folder and its backup copies on the owner's disks. The program keeps nothing on any server of its own.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the program starts to use data in a different way, this page will be updated before that change is used.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:adamantik2021@gmail.com">adamantik2021@gmail.com</a>.</p>
+
+  <footer><p><a href="index.html">Back to the program page</a></p></footer>
+</main>
+</body>
+</html>
