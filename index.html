@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audiobook Factory</title>
+<meta name="description" content="Audiobook Factory is a desktop program used by one person to prepare and publish audiobook videos on their own YouTube channel.">
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --fg: #1d2330; --muted: #566074; --line: #d9deea; --accent: #2b5fd9; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14171f; --fg: #e8ebf3; --muted: #a2abbd; --line: #2b3242; --accent: #8fb0ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 2.2rem 0 .5rem; }
+  p.lead { color: var(--muted); margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .5rem 0; }
+  code { background: rgba(127, 127, 127, .15); padding: .05rem .3rem; border-radius: 4px; font-size: .92em; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Audiobook Factory</h1>
+  <p class="lead">A desktop program for one person: it helps the owner prepare audiobook videos and publish them on the owner's own YouTube channel.</p>
+
+  <h2>What it is</h2>
+  <p>Audiobook Factory runs on the owner's own Windows computer. It is not a website, a service or a public app, and it has one user: its owner. It helps the owner turn a book into narrated chapters with pictures and publish the finished videos, one chapter at a time, on the YouTube channel that the owner controls.</p>
+
+  <h2>What Google data it uses, and why</h2>
+  <p>When the owner signs in with Google, the program asks for three permissions. It uses each only on the owner's own channel and only for the purpose below.</p>
+  <ul>
+    <li><strong>Upload videos</strong> (<code>youtube.upload</code>): to upload a finished chapter video to the owner's channel as a private video and set its publication time.</li>
+    <li><strong>Manage the channel</strong> (<code>youtube.force-ssl</code>): to set the title, description, thumbnail, subtitles and playlist of the owner's videos and the owner's channel description, and to read the channel to check that what is on YouTube matches what the owner approved.</li>
+    <li><strong>View channel analytics</strong> (<code>yt-analytics.readonly</code>): to read the numbers of the owner's own channel (views, watch time, audience retention) so that the owner can see how each chapter is doing.</li>
+  </ul>
+  <p>The program does not read anyone else's account, does not look at other people's channels through the owner's sign-in, and does not use the data for advertising.</p>
+
+  <h2>Where the data stays</h2>
+  <p>The data is kept on the owner's computer and its backup disks. The only exception: summary numbers of the channel and the titles of its videos (views, watch time, retention, traffic sources, click-through rate) are processed by the Claude AI assistant (Anthropic), through the owner's own subscription, to prepare recommendations. Nobody else receives them, and nothing is sent to the author of the program. Read the <a href="privacy.html">privacy policy</a> for the details, including how to remove the access.</p>
+
+  <footer>
+    <p>Audiobook Factory is a personal tool of one owner. Contact: <a href="mailto:adamantik2021@gmail.com">adamantik2021@gmail.com</a>. <a href="privacy.html">Privacy policy</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
